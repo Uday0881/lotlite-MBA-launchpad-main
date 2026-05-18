@@ -1,0 +1,41 @@
+{
+  "sectionTitle": "The Progressive Mastery Framework",
+  "sectionSubtitle": "Spiral Learning Model",
+  "executiveSummary": "Instead of a traditional linear curriculum where subjects are taught in isolation, our program utilizes a Continuous Progressive Model. Students are introduced to all core functional domains right from Semester I. As they progress through the 24-month program, they revisit these exact same domains each semester with increasing complexity, moving from foundational concepts to industry-level execution.",
+  "valuePropositions": [
+    {
+      "title": "Immediate Holistic Understanding",
+      "description": "Students grasp how different facets of Data Science and Real Estate Analytics interconnect from Day 1, rather than waiting until the end of the program to see the 'big picture.'"
+    },
+    {
+      "title": "Reinforced Learning",
+      "description": "Rehearsing and building upon the same subjects over four semesters drastically improves retention and practical application."
+    },
+    {
+      "title": "Job Readiness from the Start",
+      "description": "Because training and core engineering are woven into every stage, students develop a continuous portfolio of work rather than a single final project."
+    }
+  ],
+  "semesters": [
+    {
+      "number": "I",
+      "level": "Fundamentals & Syntax",
+      "focus": "Introducing the core pillars. Focus is on fundamental syntax, basic statistical reasoning, and understanding data structures across Foundations, Core Engineering, Applied Intelligence, and Predictive Modeling."
+    },
+    {
+      "number": "II",
+      "level": "Intermediate & Core Engineering",
+      "focus": "Transitioning from theory to core execution. Students begin structured programming, data warehousing, and working with larger datasets."
+    },
+    {
+      "number": "III",
+      "level": "Advanced Topics & Intelligence",
+      "focus": "Shifting to automation and deployment. Focus is on machine learning algorithms, NoSQL environments, and predictive logic using Python/R."
+    },
+    {
+      "number": "IV",
+      "level": "Super Advanced & Frontier Execution",
+      "focus": "Mastery and industry delivery. Deep dives into emerging tech trends, high-level optimization, and the final Predictive Land Value Capstone."
+    }
+  ]
+}
