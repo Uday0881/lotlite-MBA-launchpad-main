@@ -12,10 +12,12 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as OutcomesRouteImport } from './routes/outcomes'
 import { Route as IncubationRouteImport } from './routes/incubation'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CodeOfConductRouteImport } from './routes/code-of-conduct'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProgramsMbaRealEstateRouteImport } from './routes/programs.mba-real-estate'
 import { Route as ProgramsInformationTechnologyRouteImport } from './routes/programs.information-technology'
 import { Route as ProgramsDataScienceRouteImport } from './routes/programs.data-science'
 import { Route as ProgramsCrmRouteImport } from './routes/programs.crm'
@@ -33,6 +35,11 @@ const RefundPolicyRoute = RefundPolicyRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OutcomesRoute = OutcomesRouteImport.update({
+  id: '/outcomes',
+  path: '/outcomes',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IncubationRoute = IncubationRouteImport.update({
@@ -53,6 +60,11 @@ const CodeOfConductRoute = CodeOfConductRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramsMbaRealEstateRoute = ProgramsMbaRealEstateRouteImport.update({
+  id: '/programs/mba-real-estate',
+  path: '/programs/mba-real-estate',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgramsInformationTechnologyRoute =
@@ -77,24 +89,28 @@ export interface FileRoutesByFullPath {
   '/code-of-conduct': typeof CodeOfConductRoute
   '/contact': typeof ContactRoute
   '/incubation': typeof IncubationRoute
+  '/outcomes': typeof OutcomesRoute
   '/privacy': typeof PrivacyRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/terms': typeof TermsRoute
   '/programs/crm': typeof ProgramsCrmRoute
   '/programs/data-science': typeof ProgramsDataScienceRoute
   '/programs/information-technology': typeof ProgramsInformationTechnologyRoute
+  '/programs/mba-real-estate': typeof ProgramsMbaRealEstateRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/code-of-conduct': typeof CodeOfConductRoute
   '/contact': typeof ContactRoute
   '/incubation': typeof IncubationRoute
+  '/outcomes': typeof OutcomesRoute
   '/privacy': typeof PrivacyRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/terms': typeof TermsRoute
   '/programs/crm': typeof ProgramsCrmRoute
   '/programs/data-science': typeof ProgramsDataScienceRoute
   '/programs/information-technology': typeof ProgramsInformationTechnologyRoute
+  '/programs/mba-real-estate': typeof ProgramsMbaRealEstateRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -102,12 +118,14 @@ export interface FileRoutesById {
   '/code-of-conduct': typeof CodeOfConductRoute
   '/contact': typeof ContactRoute
   '/incubation': typeof IncubationRoute
+  '/outcomes': typeof OutcomesRoute
   '/privacy': typeof PrivacyRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/terms': typeof TermsRoute
   '/programs/crm': typeof ProgramsCrmRoute
   '/programs/data-science': typeof ProgramsDataScienceRoute
   '/programs/information-technology': typeof ProgramsInformationTechnologyRoute
+  '/programs/mba-real-estate': typeof ProgramsMbaRealEstateRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -116,36 +134,42 @@ export interface FileRouteTypes {
     | '/code-of-conduct'
     | '/contact'
     | '/incubation'
+    | '/outcomes'
     | '/privacy'
     | '/refund-policy'
     | '/terms'
     | '/programs/crm'
     | '/programs/data-science'
     | '/programs/information-technology'
+    | '/programs/mba-real-estate'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/code-of-conduct'
     | '/contact'
     | '/incubation'
+    | '/outcomes'
     | '/privacy'
     | '/refund-policy'
     | '/terms'
     | '/programs/crm'
     | '/programs/data-science'
     | '/programs/information-technology'
+    | '/programs/mba-real-estate'
   id:
     | '__root__'
     | '/'
     | '/code-of-conduct'
     | '/contact'
     | '/incubation'
+    | '/outcomes'
     | '/privacy'
     | '/refund-policy'
     | '/terms'
     | '/programs/crm'
     | '/programs/data-science'
     | '/programs/information-technology'
+    | '/programs/mba-real-estate'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -153,12 +177,14 @@ export interface RootRouteChildren {
   CodeOfConductRoute: typeof CodeOfConductRoute
   ContactRoute: typeof ContactRoute
   IncubationRoute: typeof IncubationRoute
+  OutcomesRoute: typeof OutcomesRoute
   PrivacyRoute: typeof PrivacyRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
   TermsRoute: typeof TermsRoute
   ProgramsCrmRoute: typeof ProgramsCrmRoute
   ProgramsDataScienceRoute: typeof ProgramsDataScienceRoute
   ProgramsInformationTechnologyRoute: typeof ProgramsInformationTechnologyRoute
+  ProgramsMbaRealEstateRoute: typeof ProgramsMbaRealEstateRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -182,6 +208,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/outcomes': {
+      id: '/outcomes'
+      path: '/outcomes'
+      fullPath: '/outcomes'
+      preLoaderRoute: typeof OutcomesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/incubation': {
@@ -210,6 +243,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs/mba-real-estate': {
+      id: '/programs/mba-real-estate'
+      path: '/programs/mba-real-estate'
+      fullPath: '/programs/mba-real-estate'
+      preLoaderRoute: typeof ProgramsMbaRealEstateRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/programs/information-technology': {
@@ -241,12 +281,14 @@ const rootRouteChildren: RootRouteChildren = {
   CodeOfConductRoute: CodeOfConductRoute,
   ContactRoute: ContactRoute,
   IncubationRoute: IncubationRoute,
+  OutcomesRoute: OutcomesRoute,
   PrivacyRoute: PrivacyRoute,
   RefundPolicyRoute: RefundPolicyRoute,
   TermsRoute: TermsRoute,
   ProgramsCrmRoute: ProgramsCrmRoute,
   ProgramsDataScienceRoute: ProgramsDataScienceRoute,
   ProgramsInformationTechnologyRoute: ProgramsInformationTechnologyRoute,
+  ProgramsMbaRealEstateRoute: ProgramsMbaRealEstateRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

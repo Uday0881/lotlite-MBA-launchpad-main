@@ -16,9 +16,9 @@ const programs = [
     desc: "PropTech infrastructure",
   },
   {
-    to: "/programs/crm",
-    label: "CRM-Customer Relationship Management in Real Estate",
-    desc: "High-ticket asset clientele",
+    to: "/programs/mba-real-estate",
+    label: "MBA in Real Estate",
+    desc: "Business strategy & property technology",
   },
 ] as const;
 
@@ -84,9 +84,8 @@ export function Header() {
             Blogs
           </Link>
           <Link
-            to="/"
-            hash="outcomes"
-            className="px-4 py-2 text-sm text-foreground/90 hover:text-foreground"
+            to="/outcomes"
+            className="px-4 py-2 text-sm text-foreground/90 hover:text-foreground [&.active]:text-[var(--gold)]"
           >
             Outcomes
           </Link>
@@ -136,10 +135,9 @@ export function Header() {
             Blogs
           </Link>
           <Link
-            to="/"
-            hash="outcomes"
+            to="/outcomes"
             onClick={() => setMobile(false)}
-            className="block py-2 text-sm"
+            className="block py-2 text-sm [&.active]:text-[var(--gold)]"
           >
             Outcomes
           </Link>

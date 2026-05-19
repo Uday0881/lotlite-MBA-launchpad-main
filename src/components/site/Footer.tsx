@@ -73,7 +73,7 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/" hash="outcomes" className="text-white/80 hover:text-[var(--gold)]">
+              <Link to="/outcomes" className="text-white/80 hover:text-[var(--gold)]">
                 Outcomes
               </Link>
             </li>

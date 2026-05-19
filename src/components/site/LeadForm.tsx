@@ -5,7 +5,7 @@ import { submitLead } from "@/lib/submit-lead";
 const PROGRAM_OPTIONS = [
   "Data Science",
   "Information Technology",
-  "Customer Relationship Management",
+  "MBA in Real Estate",
 ] as const;
 
 const inputClass =

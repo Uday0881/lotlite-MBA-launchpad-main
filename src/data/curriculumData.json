@@ -1,41 +1,114 @@
 {
-  "sectionTitle": "The Progressive Mastery Framework",
-  "sectionSubtitle": "Spiral Learning Model",
-  "executiveSummary": "Instead of a traditional linear curriculum where subjects are taught in isolation, our program utilizes a Continuous Progressive Model. Students are introduced to all core functional domains right from Semester I. As they progress through the 24-month program, they revisit these exact same domains each semester with increasing complexity, moving from foundational concepts to industry-level execution.",
+  "sectionTitle": "MBA in Real Estate",
+  "sectionSubtitle": "Dual-Track Curriculum",
+  "executiveSummary": "Our MBA in Real Estate program features a Spiral Learning Model, offering two distinct yet complementary tracks: the Academic Curriculum (SPPU Track) covering core management foundations, and the Industrial Curriculum (Lotlite Track) focusing on CRM, sales, and modern property service delivery.",
+  "spiralLearning": {
+    "title": "SPIRAL LEARNING MODEL",
+    "header": "The Progressive Mastery Framework",
+    "paragraph": "Instead of a traditional linear curriculum where subjects are taught in isolation, our program utilizes a Continuous Progressive Model. Students are introduced to all core functional domains right from Semester I. As they progress through the 24-month program, they revisit these exact same domains each semester with increasing complexity, moving from foundational concepts to industry-level execution.",
+    "points": [
+      {
+        "title": "Immediate Holistic Understanding",
+        "description": "Students grasp how different facets of Real Estate and Management interconnect from Day 1."
+      },
+      {
+        "title": "Reinforced Learning",
+        "description": "Rehearsing and building upon the same subjects over four semesters drastically improves retention and practical application."
+      },
+      {
+        "title": "Job Readiness from the Start",
+        "description": "Training and core execution are woven into every stage, developing a continuous portfolio of work."
+      }
+    ]
+  },
   "valuePropositions": [
     {
-      "title": "Immediate Holistic Understanding",
-      "description": "Students grasp how different facets of Data Science and Real Estate Analytics interconnect from Day 1, rather than waiting until the end of the program to see the 'big picture.'"
+      "title": "Comprehensive Management Foundation",
+      "description": "Develop strong business acumen with core subjects like Economics, Finance, and Marketing."
     },
     {
-      "title": "Reinforced Learning",
-      "description": "Rehearsing and building upon the same subjects over four semesters drastically improves retention and practical application."
+      "title": "Specialized Real Estate Focus",
+      "description": "Gain deep insights into Real Estate Economics, Property Management, and Urban Infrastructure."
     },
     {
-      "title": "Job Readiness from the Start",
-      "description": "Because training and core engineering are woven into every stage, students develop a continuous portfolio of work rather than a single final project."
+      "title": "Practical Industry Exposure",
+      "description": "Apply theoretical knowledge through a Summer Internship Project and a final Capstone Project."
     }
   ],
   "semesters": [
     {
       "number": "I",
-      "level": "Fundamentals & Syntax",
-      "focus": "Introducing the core pillars. Focus is on fundamental syntax, basic statistical reasoning, and understanding data structures across Foundations, Core Engineering, Applied Intelligence, and Predictive Modeling."
+      "sppu": {
+        "level": "Core Management Foundation",
+        "focus": "Generic Core (GC): Managerial Economics, Organizational Behaviour, Financial Accounting, Business Research Methods. Subject Core (SC): Marketing Management, Design Thinking."
+      },
+      "lotlite": {
+        "level": "Core Management & Client Foundations",
+        "modules": [
+          { "title": "Foundational Management Principles", "description": "Core concepts of organizational behavior and management tailored for modern property enterprises." },
+          { "title": "Real Estate Marketing Management", "description": "Strategic frameworks for positioning, branding, and promoting residential and commercial real estate assets." },
+          { "title": "Fundamentals of CRM", "description": "Introduction to building and sustaining long-term loyalty with property buyers, tenants, and institutional investors." },
+          { "title": "Property Buyer & Consumer Behavior", "description": "Understanding the psychological and economic drivers behind real estate investments and home-buying decisions." }
+        ]
+      }
     },
     {
       "number": "II",
-      "level": "Intermediate & Core Engineering",
-      "focus": "Transitioning from theory to core execution. Students begin structured programming, data warehousing, and working with larger datasets."
+      "sppu": {
+        "level": "Core Management Foundation",
+        "focus": "Generic Core (GC): Financial Management, Human Resource Management, Operations & Supply Chain Management. Subject Core (SC): Legal Aspects of Business. Skill Lab: Desk Research, Field Projects, Selling & Negotiation Skills."
+      },
+      "lotlite": {
+        "level": "Advanced Sales & Service Delivery",
+        "modules": [
+          { "title": "Advanced CRM Strategies", "description": "A deep dive into client lifecycle management, personalized engagement, and retention tactics in a competitive housing market." },
+          { "title": "Sales & Channel Management", "description": "Effectively managing brokerage networks, channel partners, and direct property sales pipelines." },
+          { "title": "Property Services Marketing", "description": "Promoting intangible real estate services, including facility management, leasing, and advisory." },
+          { "title": "CRM in the Real Estate Service Sector", "description": "Tailoring client relationship frameworks specifically for property management and urban infrastructure services." }
+        ]
+      }
     },
     {
       "number": "III",
-      "level": "Advanced Topics & Intelligence",
-      "focus": "Shifting to automation and deployment. Focus is on machine learning algorithms, NoSQL environments, and predictive logic using Python/R."
+      "sppu": {
+        "level": "Real Estate & Infrastructure Electives",
+        "focus": "Project Management: Planning, scheduling, and executing complex projects. Real Estate Economics & Finance: Real estate valuation, funding, and appraisal methods. Legal Aspects in Real Estate: Regulatory frameworks, contract management, and land laws. Summer Internship Project (SIP): Mandatory industry training (8-10 weeks)."
+      },
+      "lotlite": {
+        "level": "Corporate Relations & Digital Integration",
+        "modules": [
+          { "title": "Strategic Business Communication", "description": "Mastering stakeholder communication, negotiation, and high-stakes client pitching in real estate transactions." },
+          { "title": "B2B Markets & Commercial CRM", "description": "Managing complex relationships with corporate tenants, institutional investors, and B2B commercial leasing partners." },
+          { "title": "Real Estate Market Research", "description": "Data-driven approaches to analyzing property trends, demographic shifts, and evolving client needs." },
+          { "title": "E-Business & PropTech Ecosystems", "description": "Leveraging digital platforms, virtual tours, and tech-enabled sales processes to enhance the buyer journey." }
+        ]
+      }
     },
     {
       "number": "IV",
-      "level": "Super Advanced & Frontier Execution",
-      "focus": "Mastery and industry delivery. Deep dives into emerging tech trends, high-level optimization, and the final Predictive Land Value Capstone."
+      "sppu": {
+        "level": "Real Estate & Infrastructure Electives",
+        "focus": "Sustainable Real Estate & Urban Infrastructure: Green building norms and smart city development principles. Facilities & Property Management: Operation, maintenance, and optimization of built assets. Dissertation / Capstone Project: A research-based or practical implementation project on a real-world real estate problem."
+      },
+      "lotlite": {
+        "level": "Strategy, Compliance & Execution",
+        "modules": [
+          { "title": "Consumer Protection & Real Estate Law", "description": "Navigating legal frameworks, consumer rights, and RERA (Real Estate Regulatory Authority) guidelines to ensure ethical and transparent client dealings." },
+          { "title": "Strategic Real Estate Marketing", "description": "High-level branding and go-to-market strategies for mega-projects, smart cities, and luxury developments." },
+          { "title": "Research Methodology", "description": "Frameworks for conducting deep dives into urban infrastructure data and buyer demographics." },
+          { "title": "Final Capstone Project", "description": "A hands-on, practical implementation or research project focused on solving a real-world CRM challenge within the real estate industry." }
+        ]
+      }
+    }
+  ],
+  "assessmentStructure": [
+    {
+      "title": "Comprehensive Concurrent Evaluation (CCE)",
+      "description": "50% weightage (assignments, case studies, internal tests)"
+    },
+    {
+      "title": "End Semester Evaluation (ESE)",
+      "description": "50% weightage (final written examinations)"
     }
   ]
 }
