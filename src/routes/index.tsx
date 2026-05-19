@@ -106,6 +106,7 @@ function Home() {
       <DemoDay />
       <FeaturedProjects />
       <CurriculumSection />
+      <DailySchedule />
       <Pillars />
       <Outcomes />
       <Testimonials />
@@ -463,6 +464,63 @@ function DemoDay() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DailySchedule() {
+  const schedule = [
+    { time: "8:00 AM - 9:00 AM", title: "First Lecture" },
+    { time: "9:00 AM - 10:00 AM", title: "Second Lecture" },
+    {
+      time: "10:00 AM - 6:00 PM",
+      title: "Real-Time Project & Field Work Immersion",
+      highlight: true,
+    },
+    { time: "6:00 PM - 7:00 PM", title: "Third Lecture" },
+    { time: "7:00 PM - 8:00 PM", title: "Fourth Lecture" },
+  ];
+
+  return (
+    <section className="py-24">
+      <div className="mx-auto max-w-4xl px-6">
+        <div className="text-center mb-16">
+          <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
+            Daily Schedule
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold">The 12-Hour Operating Rhythm</h2>
+        </div>
+
+        <div className="space-y-4">
+          {schedule.map((item, i) => (
+            <div
+              key={i}
+              className={`group relative rounded-2xl border-hairline p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 flex flex-col md:flex-row md:items-center gap-4 md:gap-8 overflow-hidden ${
+                item.highlight
+                  ? "bg-card/60 border-[var(--gold)]/30 shadow-[0_0_30px_rgba(255,215,0,0.03)]"
+                  : "bg-card/20 hover:bg-card/40"
+              }`}
+            >
+              {item.highlight && (
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--gold)]/10 blur-3xl -mr-10 -mt-10 rounded-full" />
+              )}
+              <div className="md:w-56 shrink-0 relative z-10">
+                <div className="inline-flex items-center rounded-full border border-[var(--gold)]/20 bg-[var(--gold)]/10 px-3 py-1 text-xs font-semibold text-[var(--gold)]">
+                  {item.time}
+                </div>
+              </div>
+
+              <div className="flex-1 relative z-10">
+                <h3
+                  className={`text-xl font-bold ${item.highlight ? "text-white" : "text-foreground/90"}`}
+                >
+                  {item.title}
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -110,12 +110,9 @@ export function BlogSection() {
   const step = cardWidth + GAP_PX;
   const translateX = slideIndex * step;
   const cardBasis =
-    cardsPerView > 0
-      ? `calc((100% - ${GAP_PX * (cardsPerView - 1)}px) / ${cardsPerView})`
-      : "100%";
+    cardsPerView > 0 ? `calc((100% - ${GAP_PX * (cardsPerView - 1)}px) / ${cardsPerView})` : "100%";
 
-  const realIndex =
-    slideIndex === 0 ? total - 1 : slideIndex > total ? 0 : slideIndex - 1;
+  const realIndex = slideIndex === 0 ? total - 1 : slideIndex > total ? 0 : slideIndex - 1;
 
   return (
     <section id="blogs" className="py-24 border-y border-hairline bg-card/20">
@@ -125,9 +122,7 @@ export function BlogSection() {
             <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
               PropTech Blogs
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold max-w-2xl">
-              Insights &amp; Engineering
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold max-w-2xl">Insights &amp; Engineering</h2>
             <p className="mt-4 text-muted-foreground max-w-xl leading-relaxed">
               Deep dives on valuation AI, CRM intelligence, tokenized assets, and smart
               infrastructure — built for operators in the PropTech stack.
@@ -182,9 +177,7 @@ export function BlogSection() {
                 setSlideIndex(i + 1);
               }}
               className={`h-2 rounded-full transition-all duration-300 ease-in-out ${
-                i === realIndex
-                  ? "w-8 bg-[var(--gold)]"
-                  : "w-2 bg-white/20 hover:bg-white/40"
+                i === realIndex ? "w-8 bg-[var(--gold)]" : "w-2 bg-white/20 hover:bg-white/40"
               }`}
             />
           ))}
