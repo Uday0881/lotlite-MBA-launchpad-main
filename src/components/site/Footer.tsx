@@ -29,7 +29,7 @@ export function Footer() {
           <p className="text-sm text-white/60 leading-relaxed">
             Lotlite School of Real Estate
             <br />
-            Tech Tower, Baner Road
+            Baner Knowledge District
             <br />
             Pune, MH 411045 · India
           </p>
@@ -92,30 +92,13 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h4 className="text-xs uppercase tracking-wider text-white/50 mb-4">Legal</h4>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <Link to="/privacy" className="text-white/80 hover:text-[var(--gold)]">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link to="/terms" className="text-white/80 hover:text-[var(--gold)]">
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link to="/code-of-conduct" className="text-white/80 hover:text-[var(--gold)]">
-                Code of Conduct
-              </Link>
-            </li>
-            <li>
-              <Link to="/refund-policy" className="text-white/80 hover:text-[var(--gold)]">
-                Refund Policy
-              </Link>
-            </li>
-          </ul>
+        <div className="col-span-2 md:col-span-1">
+          <h4 className="text-xs uppercase tracking-wider text-white/50 mb-4">Newsletter</h4>
+          <p className="text-sm text-white/60 mb-4">Get the latest PropTech insights and updates from Lotlite.</p>
+          <form className="flex flex-col gap-2" onSubmit={(e) => e.preventDefault()}>
+            <input type="email" placeholder="Email address" className="w-full bg-white/5 border border-white/10 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[var(--gold)]/50" />
+            <button type="submit" className="w-full bg-[var(--gold)]/10 hover:bg-[var(--gold)]/20 text-[var(--gold)] border border-[var(--gold)]/30 rounded-md px-3 py-2 text-sm transition font-medium">Subscribe</button>
+          </form>
         </div>
       </div>
       <div className="border-t border-white/10">

@@ -20,9 +20,10 @@ export const Route = createFileRoute("/programs/data-science")({
       title="Post Graduate Program in Data Science for Real Estate Analytics"
       subtitle="Leverage predictive modeling, big data warehousing, and spatial data structures to automate property valuations and forecast regional growth trends."
       ctaLabel="Apply to Data Science Cohort"
-      semesters={[
+      spiralSemesters={[
         {
-          name: "Foundations",
+          title: "Semester 1",
+          subtitle: "Foundation Topics",
           courses: [
             "Basics of Statistics",
             "Introduction to Data Science",
@@ -31,7 +32,8 @@ export const Route = createFileRoute("/programs/data-science")({
           ],
         },
         {
-          name: "Core Engineering",
+          title: "Semester 2",
+          subtitle: "Intermediate Topics",
           courses: [
             "Python Programming",
             "Advanced Statistics",
@@ -40,7 +42,8 @@ export const Route = createFileRoute("/programs/data-science")({
           ],
         },
         {
-          name: "Applied Intelligence",
+          title: "Semester 3",
+          subtitle: "Advanced Topics",
           courses: [
             "No SQL Database",
             "Data Visualisation",
@@ -49,7 +52,8 @@ export const Route = createFileRoute("/programs/data-science")({
           ],
         },
         {
-          name: "Capstone & Frontier",
+          title: "Semester 4",
+          subtitle: "Super Advanced Capstone Topics",
           courses: [
             "Emerging Trends in Data Science",
             "Submission II",

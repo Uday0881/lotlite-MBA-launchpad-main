@@ -119,7 +119,7 @@ export function LeadForm() {
           />
         </FormField>
 
-        <FormField label="Program Interest">
+        <FormField label="Academic Stream">
           <select
             name="programInterest"
             value={programInterest}

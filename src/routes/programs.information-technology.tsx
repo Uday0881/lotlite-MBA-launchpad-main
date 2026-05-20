@@ -21,9 +21,10 @@ export const Route = createFileRoute("/programs/information-technology")({
       badge="NEW FOR 2026"
       subtitle="Master smart cloud architectures, software engineering with UML, and enterprise database systems driving the future of real estate tech infrastructures."
       ctaLabel="Apply to IT Cohort"
-      semesters={[
+      spiralSemesters={[
         {
-          name: "IT Foundations",
+          title: "Semester 1",
+          subtitle: "Foundation Topics",
           courses: [
             "Principles and Practices of Management",
             "Business Communication",
@@ -33,7 +34,8 @@ export const Route = createFileRoute("/programs/information-technology")({
           ],
         },
         {
-          name: "Engineering Practice",
+          title: "Semester 2",
+          subtitle: "Intermediate Topics",
           courses: [
             "Business Requirement Analysis",
             "Project Management (IT)",
@@ -43,7 +45,8 @@ export const Route = createFileRoute("/programs/information-technology")({
           ],
         },
         {
-          name: "Intelligence & Security",
+          title: "Semester 3",
+          subtitle: "Advanced Topics",
           courses: [
             "Software Quality Management",
             "Introduction to Data Science",
@@ -54,7 +57,8 @@ export const Route = createFileRoute("/programs/information-technology")({
           ],
         },
         {
-          name: "Enterprise & Cloud",
+          title: "Semester 4",
+          subtitle: "Super Advanced Capstone Topics",
           courses: [
             "Latest Trends in IT",
             "Business Applications and ERP",

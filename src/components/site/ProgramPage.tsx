@@ -2,12 +2,14 @@ import { Link } from "@tanstack/react-router";
 import { usePageTheme, type PageTheme } from "@/hooks/use-page-theme";
 import { ApplyDialog } from "@/components/site/ApplyDialog";
 import { CurriculumSection } from "@/components/site/CurriculumSection";
+import { SpiralCurriculum, type SpiralSemester } from "@/components/site/SpiralCurriculum";
 
 export function ProgramPage({
   title,
   badge,
   subtitle,
   semesters,
+  spiralSemesters,
   ctaLabel,
   theme,
   heroImage,
@@ -16,7 +18,8 @@ export function ProgramPage({
   title: string;
   badge?: string;
   subtitle: string;
-  semesters: { name: string; courses: string[] }[];
+  semesters?: { name: string; courses: string[] }[];
+  spiralSemesters?: SpiralSemester[];
   ctaLabel: string;
   theme: PageTheme;
   heroImage: string;
@@ -94,7 +97,22 @@ export function ProgramPage({
         </div>
       </section>
 
-      <CurriculumSection />
+      {spiralSemesters ? (
+        <section id="curriculum" className="mx-auto max-w-7xl px-6 py-24">
+          <div className="text-center mb-16 animate-fade-up">
+            <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
+              Information Architecture
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Program Curriculum</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Our Continuous Progressive Model ensuring mastery from foundation to advanced application.
+            </p>
+          </div>
+          <SpiralCurriculum semesters={spiralSemesters} />
+        </section>
+      ) : (
+        <CurriculumSection />
+      )}
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mt-4 rounded-2xl bg-gradient-to-r from-[var(--gold)]/15 via-[var(--gold)]/5 to-transparent border-hairline p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">

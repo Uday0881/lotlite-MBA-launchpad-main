@@ -1,8 +1,7 @@
-﻿import { createFileRoute, Link } from "@tanstack/react-router";
+﻿﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
-  CheckCircle2,
   Car,
   Building2,
   LineChart,
@@ -12,9 +11,9 @@ import {
 } from "lucide-react";
 import { usePageTheme } from "@/hooks/use-page-theme";
 import { FAQ } from "@/components/site/FAQ";
-import { LeadForm } from "@/components/site/LeadForm";
 import { ApplyDialog } from "@/components/site/ApplyDialog";
-import { CurriculumSection } from "@/components/site/CurriculumSection";
+import { SpiralCurriculum } from "@/components/site/SpiralCurriculum";
+import { AdmissionsProcess } from "@/components/site/AdmissionsProcess";
 import { BlogSection } from "@/components/site/BlogSection";
 
 export const Route = createFileRoute("/")({
@@ -81,43 +80,96 @@ const pillars = [
   },
 ];
 
-const stepperSteps = [
-  { n: 1, title: "Apply", body: "Submit your profile and a 90-second pitch on why real estate." },
-  {
-    n: 2,
-    title: "Diagnostic",
-    body: "Case-led interview with a partner developer and a Lotlite faculty lead.",
-  },
-  {
-    n: 3,
-    title: "Activate",
-    body: "Sign your employment letter. Onboard to the fleet, sandbox, and capital desk.",
-  },
-  { n: 4, title: "Launch", body: "24 months later — placed, promoted, or funded as a founder." },
-];
-
 function Home() {
   usePageTheme("home");
   return (
     <>
       <Hero />
+      <PartnersMarquee />
       <StatsBand />
       <LifeCarousel />
       <DemoDay />
       <FeaturedProjects />
-      <CurriculumSection />
+      <GenericCurriculum />
       <DailySchedule />
       <Pillars />
       <Outcomes />
       <Testimonials />
-      <Admissions />
+      <AdmissionsProcess />
       <BlogSection />
       <FAQ />
     </>
   );
 }
 
+function GenericCurriculum() {
+  const genericSemesters = [
+    {
+      title: "Semester 1",
+      subtitle: "Foundation Topics",
+      courses: [
+        "Core Management & Industry Principles",
+        "Introduction to Real Estate Economics",
+        "Foundational Tech & Programming Concepts",
+      ],
+    },
+    {
+      title: "Semester 2",
+      subtitle: "Intermediate Topics",
+      courses: [
+        "Advanced Operations & Supply Chain",
+        "Data Analytics & Market Intelligence",
+        "Software Engineering & Architecture",
+      ],
+    },
+    {
+      title: "Semester 3",
+      subtitle: "Advanced Topics",
+      courses: [
+        "Strategic Deal Structuring & Negotiation",
+        "Applied Machine Learning in Real Estate",
+        "Enterprise Digital Ecosystems & Security",
+      ],
+    },
+    {
+      title: "Semester 4",
+      subtitle: "Super Advanced Capstone Topics",
+      courses: [
+        "Final Capstone Project Implementation",
+        "PropTech Start-Up Incubation",
+        "Regulatory Compliance & RERA Mastery",
+      ],
+    },
+  ];
+
+  return (
+    <section className="py-24 border-y border-hairline bg-[var(--navy-deep)]/40">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="text-center mb-16 animate-fade-up">
+          <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
+            The 24-Month Journey
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Continuous Progressive Model</h2>
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            From Day 1, engage in our rigorous academic spiral that builds upon itself, leading to mastery in PropTech, Data Science, and Real Estate Enterprise.
+          </p>
+        </div>
+        <SpiralCurriculum semesters={genericSemesters} />
+        <div className="mt-12 text-center animate-fade-up">
+          <Link
+            to="/programs/mba-real-estate"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-sm font-medium"
+          >
+            Explore Specific Programs <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 const projectCards = [
+
   {
     title: "Eco-Smart Urban Township",
     category: "Sustainable Development",
@@ -584,69 +636,18 @@ function Outcomes() {
   );
 }
 
-function Admissions() {
+function PartnersMarquee() {
+  const partners = ["DLF", "Lodha", "Blackstone", "JLL", "Godrej", "Prestige"];
   return (
-    <section id="apply" className="py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center mb-16">
-          <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
-            Admissions
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold">From application to activation.</h2>
-        </div>
-
-        <div className="relative mb-20">
-          <div className="hidden md:block absolute top-7 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-[var(--gold)]/40 to-transparent" />
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-            {stepperSteps.map((s) => (
-              <div key={s.n} className="text-center">
-                <div className="mx-auto h-14 w-14 rounded-full bg-gradient-to-br from-[var(--gold)] to-[var(--gold-bright)] text-[var(--navy-deep)] font-bold text-lg grid place-items-center shadow-gold mb-5">
-                  {s.n}
-                </div>
-                <h3 className="font-bold text-lg">{s.title}</h3>
-                <p className="text-sm text-muted-foreground mt-2 max-w-[220px] mx-auto">{s.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-6">
-          <div className="rounded-3xl border-hairline bg-card/60 p-8 shadow-premium">
-            <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
-              Investment
-            </div>
-            <h3 className="text-3xl font-bold">Full Cohort Program</h3>
-            <div className="mt-5 flex items-baseline gap-2">
-              <span className="text-5xl font-bold text-gradient-gold">₹4,80,000</span>
-              <span className="text-sm text-muted-foreground">/ 24 months</span>
-            </div>
-            <p className="text-sm text-muted-foreground mt-3">
-              Offset by guaranteed Day 1 employment income from your assigned developer partner.
-            </p>
-            <ul className="mt-7 space-y-3">
-              {[
-                "Day-1 salaried employment letter",
-                "On-demand mobility fleet access",
-                "Capital Markets Desk + Sandbox seat",
-                "Founder mentor pool + Demo Day exposure",
-                "Lifetime alumni capital network",
-              ].map((p) => (
-                <li key={p} className="flex gap-3 text-sm">
-                  <CheckCircle2 className="h-5 w-5 text-[var(--gold)] shrink-0" />
-                  <span>{p}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-7 rounded-xl bg-[var(--gold)]/10 border border-[var(--gold)]/20 p-4 text-xs text-foreground/90">
-              <strong className="text-[var(--gold)]">Mobility fleet note:</strong> Cars + drivers
-              are provisioned during active hours for client and site work. Personal use is
-              excluded.
-            </div>
-          </div>
-
-          <LeadForm />
+    <div className="py-8 border-t border-white/10 bg-black/40 backdrop-blur">
+      <div className="text-center text-xs uppercase tracking-widest text-white/50 mb-6">Our Corporate Partners</div>
+      <div className="flex overflow-hidden">
+        <div className="flex animate-marquee whitespace-nowrap gap-16 px-8 items-center opacity-70">
+          {[...partners, ...partners].map((p, i) => (
+            <div key={i} className="text-xl md:text-2xl font-black tracking-tighter text-white">{p}</div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
