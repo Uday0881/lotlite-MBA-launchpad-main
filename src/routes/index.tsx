@@ -298,7 +298,7 @@ function HeroCta() {
           ["24 Months", "Duration"],
           ["Full-Time", "Experiential"],
           ["Pune / Hybrid", "Format"],
-          ["PropTech & Infra", "Focus"],
+          ["Software Engineering & PropTech", "Focus"],
         ].map(([t, s]) => (
           <div
             key={s}

@@ -48,12 +48,12 @@ export function Footer() {
                 to="/programs/information-technology"
                 className="text-white/80 hover:text-[var(--gold)]"
               >
-                Information Technology
+                MCA (PropTech)
               </Link>
             </li>
             <li>
               <Link to="/programs/crm" className="text-white/80 hover:text-[var(--gold)]">
-                CRM
+                MCA (CRM)
               </Link>
             </li>
             <li>

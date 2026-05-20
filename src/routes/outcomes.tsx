@@ -81,7 +81,7 @@ function OutcomesPage() {
                 <td className="p-6 text-muted-foreground">Predictive ML models for pricing</td>
               </tr>
               <tr className="hover:bg-white/[0.02] transition-colors">
-                <td className="p-6 text-[var(--gold)] font-medium">PG in Information Technology</td>
+                <td className="p-6 text-[var(--gold)] font-medium">MCA (PropTech & Engineering)</td>
                 <td className="p-6">PropTech Product Manager</td>
                 <td className="p-6 text-muted-foreground">Scalable digital infrastructure</td>
               </tr>

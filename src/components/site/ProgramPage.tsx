@@ -5,6 +5,7 @@ import { CurriculumSection } from "@/components/site/CurriculumSection";
 
 export function ProgramPage({
   title,
+  badge,
   subtitle,
   semesters,
   ctaLabel,
@@ -13,6 +14,7 @@ export function ProgramPage({
   eyebrow = "Post Graduate Program",
 }: {
   title: string;
+  badge?: string;
   subtitle: string;
   semesters: { name: string; courses: string[] }[];
   ctaLabel: string;
@@ -31,7 +33,14 @@ export function ProgramPage({
           <div className="inline-flex items-center gap-2 rounded-full border-hairline bg-surface-soft px-3 py-1 text-xs uppercase tracking-widest text-[var(--gold)] mb-6 animate-fade-in">
             {eyebrow}
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] animate-fade-up">{title}</h1>
+          <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] animate-fade-up flex flex-wrap items-center gap-4">
+            {title}
+            {badge && (
+              <span className="text-[12px] leading-none uppercase tracking-widest text-[var(--gold)] border border-[var(--gold)]/30 rounded-full px-3 py-1.5 bg-[var(--gold)]/10 font-bold self-center">
+                {badge}
+              </span>
+            )}
+          </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed animate-fade-up">
             {subtitle}
           </p>
