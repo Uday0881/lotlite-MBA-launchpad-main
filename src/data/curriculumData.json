@@ -45,10 +45,22 @@
       "lotlite": {
         "level": "Core Management & Client Foundations",
         "modules": [
-          { "title": "Foundational Management Principles", "description": "Core concepts of organizational behavior and management tailored for modern property enterprises." },
-          { "title": "Real Estate Marketing Management", "description": "Strategic frameworks for positioning, branding, and promoting residential and commercial real estate assets." },
-          { "title": "Fundamentals of CRM", "description": "Introduction to building and sustaining long-term loyalty with property buyers, tenants, and institutional investors." },
-          { "title": "Property Buyer & Consumer Behavior", "description": "Understanding the psychological and economic drivers behind real estate investments and home-buying decisions." }
+          {
+            "title": "Foundational Management Principles",
+            "description": "Core concepts of organizational behavior and management tailored for modern property enterprises."
+          },
+          {
+            "title": "Real Estate Marketing Management",
+            "description": "Strategic frameworks for positioning, branding, and promoting residential and commercial real estate assets."
+          },
+          {
+            "title": "Fundamentals of CRM",
+            "description": "Introduction to building and sustaining long-term loyalty with property buyers, tenants, and institutional investors."
+          },
+          {
+            "title": "Property Buyer & Consumer Behavior",
+            "description": "Understanding the psychological and economic drivers behind real estate investments and home-buying decisions."
+          }
         ]
       }
     },
@@ -61,10 +73,22 @@
       "lotlite": {
         "level": "Advanced Sales & Service Delivery",
         "modules": [
-          { "title": "Advanced CRM Strategies", "description": "A deep dive into client lifecycle management, personalized engagement, and retention tactics in a competitive housing market." },
-          { "title": "Sales & Channel Management", "description": "Effectively managing brokerage networks, channel partners, and direct property sales pipelines." },
-          { "title": "Property Services Marketing", "description": "Promoting intangible real estate services, including facility management, leasing, and advisory." },
-          { "title": "CRM in the Real Estate Service Sector", "description": "Tailoring client relationship frameworks specifically for property management and urban infrastructure services." }
+          {
+            "title": "Advanced CRM Strategies",
+            "description": "A deep dive into client lifecycle management, personalized engagement, and retention tactics in a competitive housing market."
+          },
+          {
+            "title": "Sales & Channel Management",
+            "description": "Effectively managing brokerage networks, channel partners, and direct property sales pipelines."
+          },
+          {
+            "title": "Property Services Marketing",
+            "description": "Promoting intangible real estate services, including facility management, leasing, and advisory."
+          },
+          {
+            "title": "CRM in the Real Estate Service Sector",
+            "description": "Tailoring client relationship frameworks specifically for property management and urban infrastructure services."
+          }
         ]
       }
     },
@@ -77,10 +101,22 @@
       "lotlite": {
         "level": "Corporate Relations & Digital Integration",
         "modules": [
-          { "title": "Strategic Business Communication", "description": "Mastering stakeholder communication, negotiation, and high-stakes client pitching in real estate transactions." },
-          { "title": "B2B Markets & Commercial CRM", "description": "Managing complex relationships with corporate tenants, institutional investors, and B2B commercial leasing partners." },
-          { "title": "Real Estate Market Research", "description": "Data-driven approaches to analyzing property trends, demographic shifts, and evolving client needs." },
-          { "title": "E-Business & PropTech Ecosystems", "description": "Leveraging digital platforms, virtual tours, and tech-enabled sales processes to enhance the buyer journey." }
+          {
+            "title": "Strategic Business Communication",
+            "description": "Mastering stakeholder communication, negotiation, and high-stakes client pitching in real estate transactions."
+          },
+          {
+            "title": "B2B Markets & Commercial CRM",
+            "description": "Managing complex relationships with corporate tenants, institutional investors, and B2B commercial leasing partners."
+          },
+          {
+            "title": "Real Estate Market Research",
+            "description": "Data-driven approaches to analyzing property trends, demographic shifts, and evolving client needs."
+          },
+          {
+            "title": "E-Business & PropTech Ecosystems",
+            "description": "Leveraging digital platforms, virtual tours, and tech-enabled sales processes to enhance the buyer journey."
+          }
         ]
       }
     },
@@ -93,10 +129,22 @@
       "lotlite": {
         "level": "Strategy, Compliance & Execution",
         "modules": [
-          { "title": "Consumer Protection & Real Estate Law", "description": "Navigating legal frameworks, consumer rights, and RERA (Real Estate Regulatory Authority) guidelines to ensure ethical and transparent client dealings." },
-          { "title": "Strategic Real Estate Marketing", "description": "High-level branding and go-to-market strategies for mega-projects, smart cities, and luxury developments." },
-          { "title": "Research Methodology", "description": "Frameworks for conducting deep dives into urban infrastructure data and buyer demographics." },
-          { "title": "Final Capstone Project", "description": "A hands-on, practical implementation or research project focused on solving a real-world CRM challenge within the real estate industry." }
+          {
+            "title": "Consumer Protection & Real Estate Law",
+            "description": "Navigating legal frameworks, consumer rights, and RERA (Real Estate Regulatory Authority) guidelines to ensure ethical and transparent client dealings."
+          },
+          {
+            "title": "Strategic Real Estate Marketing",
+            "description": "High-level branding and go-to-market strategies for mega-projects, smart cities, and luxury developments."
+          },
+          {
+            "title": "Research Methodology",
+            "description": "Frameworks for conducting deep dives into urban infrastructure data and buyer demographics."
+          },
+          {
+            "title": "Final Capstone Project",
+            "description": "A hands-on, practical implementation or research project focused on solving a real-world CRM challenge within the real estate industry."
+          }
         ]
       }
     }

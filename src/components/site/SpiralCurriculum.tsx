@@ -31,7 +31,10 @@ export function SpiralCurriculum({ semesters }: { semesters: SpiralSemester[] })
           const isDualTrack = !!(sem.leftTrack && sem.rightTrack);
 
           return (
-            <div key={idx} className="relative w-full flex flex-col md:flex-row md:items-start md:gap-8 lg:gap-12 pl-0 md:pl-4">
+            <div
+              key={idx}
+              className="relative w-full flex flex-col md:flex-row md:items-start md:gap-8 lg:gap-12 pl-0 md:pl-4"
+            >
               {/* Timeline Node */}
               <div className="hidden md:flex flex-col items-center shrink-0 z-10 w-16">
                 <div className="w-12 h-12 rounded-full border border-[var(--gold)]/30 bg-card/80 grid place-items-center text-[var(--gold)] shadow-[0_0_15px_rgba(255,215,0,0.1)] mt-2 backdrop-blur">
@@ -61,9 +64,13 @@ export function SpiralCurriculum({ semesters }: { semesters: SpiralSemester[] })
                       <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
                         {sem.leftTrack?.title}
                       </div>
-                      <h4 className="text-lg font-bold mb-4">{sem.title} - {sem.subtitle}</h4>
+                      <h4 className="text-lg font-bold mb-4">
+                        {sem.title} - {sem.subtitle}
+                      </h4>
                       {sem.leftTrack?.description && (
-                         <p className="text-sm text-muted-foreground mb-4">{sem.leftTrack.description}</p>
+                        <p className="text-sm text-muted-foreground mb-4">
+                          {sem.leftTrack.description}
+                        </p>
                       )}
                       <ul className="space-y-3">
                         {sem.leftTrack?.courses.map((course, i) => (
@@ -81,9 +88,13 @@ export function SpiralCurriculum({ semesters }: { semesters: SpiralSemester[] })
                       <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-2">
                         {sem.rightTrack?.title}
                       </div>
-                      <h4 className="text-lg font-bold mb-4">{sem.title} - {sem.subtitle}</h4>
+                      <h4 className="text-lg font-bold mb-4">
+                        {sem.title} - {sem.subtitle}
+                      </h4>
                       {sem.rightTrack?.description && (
-                         <p className="text-sm text-muted-foreground mb-4">{sem.rightTrack.description}</p>
+                        <p className="text-sm text-muted-foreground mb-4">
+                          {sem.rightTrack.description}
+                        </p>
                       )}
                       <ul className="space-y-4">
                         {sem.rightTrack?.courses.map((course, i) => {
@@ -110,7 +121,7 @@ export function SpiralCurriculum({ semesters }: { semesters: SpiralSemester[] })
                 ) : (
                   <div className="rounded-2xl border border-[var(--gold)]/10 bg-card/50 p-6 md:p-8 shadow-sm hover:border-[var(--gold)]/30 transition-colors relative overflow-hidden group">
                     <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-[var(--gold)]/5 blur-xl -z-10 group-hover:bg-[var(--gold)]/10 transition-colors" />
-                    
+
                     <div className="hidden md:block mb-6">
                       <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
                         {sem.title}

@@ -1,4 +1,4 @@
-﻿﻿import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -151,7 +151,8 @@ function GenericCurriculum() {
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Continuous Progressive Model</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From Day 1, engage in our rigorous academic spiral that builds upon itself, leading to mastery in PropTech, Data Science, and Real Estate Enterprise.
+            From Day 1, engage in our rigorous academic spiral that builds upon itself, leading to
+            mastery in PropTech, Data Science, and Real Estate Enterprise.
           </p>
         </div>
         <SpiralCurriculum semesters={genericSemesters} />
@@ -169,7 +170,6 @@ function GenericCurriculum() {
 }
 
 const projectCards = [
-
   {
     title: "Eco-Smart Urban Township",
     category: "Sustainable Development",
@@ -239,7 +239,7 @@ const testimonials = [
     quote:
       "The on-demand mobility allowed me to close three site visits in a single day. The efficiency here is unmatched.",
     name: "Aarav Sharma",
-    role: "Cohort 01 • PropTech Founder",
+    role: "Industry Partner • PropTech Founder",
   },
   {
     quote:
@@ -261,7 +261,7 @@ function Testimonials() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
           <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
-            Alumni Voices
+            Industry Voices
           </div>
           <h2 className="text-3xl md:text-5xl font-bold">Hear from our operators.</h2>
         </div>
@@ -304,7 +304,7 @@ function Hero() {
       <div className="relative mx-auto max-w-6xl px-6 text-center py-32">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-widest text-[var(--gold-bright)] mb-8 animate-fade-in">
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold-bright)] animate-pulse" />
-          Cohort 04 · Now open
+          Founding Cohort · Now open
         </div>
         <h1 className="text-5xl md:text-7xl font-bold leading-[1.02] max-w-5xl mx-auto animate-fade-up text-white [text-shadow:0_2px_30px_rgba(0,0,0,0.6)]">
           The New Era of Real Estate Leadership:{" "}
@@ -640,11 +640,15 @@ function PartnersMarquee() {
   const partners = ["DLF", "Lodha", "Blackstone", "JLL", "Godrej", "Prestige"];
   return (
     <div className="py-8 border-t border-white/10 bg-black/40 backdrop-blur">
-      <div className="text-center text-xs uppercase tracking-widest text-white/50 mb-6">Our Corporate Partners</div>
+      <div className="text-center text-xs uppercase tracking-widest text-white/50 mb-6">
+        Our Corporate Partners
+      </div>
       <div className="flex overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap gap-16 px-8 items-center opacity-70">
           {[...partners, ...partners].map((p, i) => (
-            <div key={i} className="text-xl md:text-2xl font-black tracking-tighter text-white">{p}</div>
+            <div key={i} className="text-xl md:text-2xl font-black tracking-tighter text-white">
+              {p}
+            </div>
           ))}
         </div>
       </div>

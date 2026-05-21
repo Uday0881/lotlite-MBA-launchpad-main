@@ -88,7 +88,9 @@ function OutcomesPage() {
               <tr className="hover:bg-white/[0.02] transition-colors">
                 <td className="p-6 text-[var(--gold)] font-medium">MBA in Real Estate</td>
                 <td className="p-6">Real Estate Enterprise Leader</td>
-                <td className="p-6 text-muted-foreground">Business strategy & property technology</td>
+                <td className="p-6 text-muted-foreground">
+                  Business strategy & property technology
+                </td>
               </tr>
               <tr className="hover:bg-white/[0.02] transition-colors">
                 <td className="p-6 text-[var(--gold)] font-medium">Crash Course</td>

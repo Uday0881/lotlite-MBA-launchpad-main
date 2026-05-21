@@ -18,9 +18,9 @@ export const Route = createFileRoute("/programs/information-technology")({
       heroImage="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80&auto=format&fit=crop"
       eyebrow="The Infrastructure Stack"
       title="MCA (PropTech & Engineering)"
-      badge="NEW FOR 2026"
+      badge="Founding Cohort"
       subtitle="Master smart cloud architectures, software engineering with UML, and enterprise database systems driving the future of real estate tech infrastructures."
-      ctaLabel="Apply to IT Cohort"
+      ctaLabel="Apply for Founding Cohort"
       spiralSemesters={[
         {
           title: "Semester 1",

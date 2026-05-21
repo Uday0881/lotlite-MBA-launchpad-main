@@ -26,7 +26,10 @@ export function AdmissionsProcess() {
   ];
 
   return (
-    <section id="admissions-process" className="py-24 border-y border-hairline bg-[var(--navy-deep)]/40">
+    <section
+      id="admissions-process"
+      className="py-24 border-y border-hairline bg-[var(--navy-deep)]/40"
+    >
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16 animate-fade-up">
           <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
@@ -34,7 +37,8 @@ export function AdmissionsProcess() {
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Standardized Corporate Onboarding</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From your first application to signing your employment offer, our admissions process evaluates your potential to lead and build.
+            From your first application to signing your employment offer, our admissions process
+            evaluates your potential to lead and build.
           </p>
         </div>
 
@@ -58,9 +62,15 @@ export function AdmissionsProcess() {
         <div className="max-w-2xl mx-auto rounded-2xl bg-card/40 border border-hairline p-6 flex flex-col md:flex-row gap-6 items-center justify-center animate-fade-up">
           <h4 className="font-bold text-[var(--gold)] whitespace-nowrap">Your Commitment:</h4>
           <ul className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-foreground/90 justify-center">
-            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Drive & Ambition</li>
-            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Analytical Mindset</li>
-            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Resilience</li>
+            <li className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Drive & Ambition
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Analytical Mindset
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Resilience
+            </li>
           </ul>
         </div>
       </div>

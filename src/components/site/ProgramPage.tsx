@@ -105,7 +105,8 @@ export function ProgramPage({
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Program Curriculum</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Our Continuous Progressive Model ensuring mastery from foundation to advanced application.
+              Our Continuous Progressive Model ensuring mastery from foundation to advanced
+              application.
             </p>
           </div>
           <SpiralCurriculum semesters={spiralSemesters} />

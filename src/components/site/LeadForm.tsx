@@ -63,7 +63,7 @@ export function LeadForm() {
       className="rounded-3xl border-hairline bg-card/60 p-8 shadow-premium"
     >
       <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
-        <Rocket className="h-3.5 w-3.5" /> Lead Intake
+        <Rocket className="h-3.5 w-3.5" /> Founding Cohort Intake
       </div>
       <h3 className="text-2xl font-bold">Start your application</h3>
       <p className="text-sm text-muted-foreground mt-2">
@@ -125,10 +125,10 @@ export function LeadForm() {
             value={programInterest}
             onChange={(e) => setProgramInterest(e.target.value)}
             disabled={loading}
-            className={inputClass}
+            className={`${inputClass} cursor-pointer`}
           >
             {PROGRAM_OPTIONS.map((option) => (
-              <option key={option} value={option}>
+              <option key={option} value={option} className="bg-[var(--card)] text-foreground">
                 {option}
               </option>
             ))}
@@ -165,7 +165,7 @@ function SuccessCardContent() {
   return (
     <>
       <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[var(--gold)] mb-3">
-        <Rocket className="h-3.5 w-3.5" /> Lead Intake
+        <Rocket className="h-3.5 w-3.5" /> Founding Cohort Intake
       </div>
       <h3 className="text-2xl font-bold">Done!!</h3>
       <div className="mt-8 rounded-xl bg-[var(--gold)]/10 border border-[var(--gold)]/30 p-6 text-center">

@@ -94,10 +94,21 @@ export function Footer() {
 
         <div className="col-span-2 md:col-span-1">
           <h4 className="text-xs uppercase tracking-wider text-white/50 mb-4">Newsletter</h4>
-          <p className="text-sm text-white/60 mb-4">Get the latest PropTech insights and updates from Lotlite.</p>
+          <p className="text-sm text-white/60 mb-4">
+            Get the latest PropTech insights and updates from Lotlite.
+          </p>
           <form className="flex flex-col gap-2" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Email address" className="w-full bg-white/5 border border-white/10 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[var(--gold)]/50" />
-            <button type="submit" className="w-full bg-[var(--gold)]/10 hover:bg-[var(--gold)]/20 text-[var(--gold)] border border-[var(--gold)]/30 rounded-md px-3 py-2 text-sm transition font-medium">Subscribe</button>
+            <input
+              type="email"
+              placeholder="Email address"
+              className="w-full bg-white/5 border border-white/10 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[var(--gold)]/50"
+            />
+            <button
+              type="submit"
+              className="w-full bg-[var(--gold)]/10 hover:bg-[var(--gold)]/20 text-[var(--gold)] border border-[var(--gold)]/30 rounded-md px-3 py-2 text-sm transition font-medium"
+            >
+              Subscribe
+            </button>
           </form>
         </div>
       </div>

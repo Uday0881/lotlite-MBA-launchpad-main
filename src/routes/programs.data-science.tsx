@@ -18,8 +18,9 @@ export const Route = createFileRoute("/programs/data-science")({
       heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop"
       eyebrow="The Analytics Engine"
       title="Post Graduate Program in Data Science for Real Estate Analytics"
+      badge="Founding Cohort"
       subtitle="Leverage predictive modeling, big data warehousing, and spatial data structures to automate property valuations and forecast regional growth trends."
-      ctaLabel="Apply to Data Science Cohort"
+      ctaLabel="Apply for Founding Cohort"
       spiralSemesters={[
         {
           title: "Semester 1",

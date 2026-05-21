@@ -14,7 +14,8 @@ export function CurriculumSection() {
         </div>
         <h2 className="text-3xl md:text-5xl font-bold mb-6">Program Curriculums</h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Explore our foundational and advanced tracks designed for the modern real estate ecosystem.
+          Explore our foundational and advanced tracks designed for the modern real estate
+          ecosystem.
         </p>
       </div>
 
@@ -43,7 +44,9 @@ export function CurriculumSection() {
                   <div className="text-3xl font-black text-[var(--gold)]/50">I & II</div>
                   <div>
                     <h3 className="text-xl font-bold">Foundational Business</h3>
-                    <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">Semester 1 & 2</div>
+                    <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">
+                      Semester 1 & 2
+                    </div>
                   </div>
                 </div>
                 <ul className="space-y-4">
@@ -61,7 +64,9 @@ export function CurriculumSection() {
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="h-4 w-4 text-[var(--gold)] shrink-0 mt-0.5" />
-                    <span className="text-foreground/90">Supply Chain & Operations Fundamentals</span>
+                    <span className="text-foreground/90">
+                      Supply Chain & Operations Fundamentals
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -72,25 +77,35 @@ export function CurriculumSection() {
                   <div className="text-3xl font-black text-[var(--gold)]">III & IV</div>
                   <div>
                     <h3 className="text-xl font-bold">Advanced PropTech & Capstone</h3>
-                    <div className="text-xs uppercase tracking-widest text-[var(--gold)] mt-1">Semester 3 & 4</div>
+                    <div className="text-xs uppercase tracking-widest text-[var(--gold)] mt-1">
+                      Semester 3 & 4
+                    </div>
                   </div>
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-4 w-4 text-[var(--gold)] shrink-0 mt-0.5" />
-                    <span className="text-foreground/90 font-medium">Live Deal Capstone Project</span>
+                    <span className="text-foreground/90 font-medium">
+                      Live Deal Capstone Project
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-4 w-4 text-[var(--gold)] shrink-0 mt-0.5" />
-                    <span className="text-foreground/90 font-medium">Advanced Capital Markets & Underwriting</span>
+                    <span className="text-foreground/90 font-medium">
+                      Advanced Capital Markets & Underwriting
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-4 w-4 text-[var(--gold)] shrink-0 mt-0.5" />
-                    <span className="text-foreground/90 font-medium">Strategic Tech-Driven Property Systems</span>
+                    <span className="text-foreground/90 font-medium">
+                      Strategic Tech-Driven Property Systems
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-4 w-4 text-[var(--gold)] shrink-0 mt-0.5" />
-                    <span className="text-foreground/90 font-medium">RERA & Spatial Compliance Mastery</span>
+                    <span className="text-foreground/90 font-medium">
+                      RERA & Spatial Compliance Mastery
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -101,7 +116,9 @@ export function CurriculumSection() {
             <div className="rounded-2xl border border-hairline bg-card/40 p-8 shadow-sm text-center py-20">
               <h3 className="text-2xl font-bold mb-3">MCA Curriculum</h3>
               <p className="text-muted-foreground max-w-md mx-auto">
-                Detailed semester breakdown for our MCA tracks (PropTech & Engineering, Ecosystems & CRM) is launching soon. Focused on digital infrastructure, enterprise databases, and property cloud architectures.
+                Detailed semester breakdown for our MCA tracks (PropTech & Engineering, Ecosystems &
+                CRM) is launching soon. Focused on digital infrastructure, enterprise databases, and
+                property cloud architectures.
               </p>
             </div>
           )}
@@ -110,7 +127,8 @@ export function CurriculumSection() {
             <div className="rounded-2xl border border-hairline bg-card/40 p-8 shadow-sm text-center py-20">
               <h3 className="text-2xl font-bold mb-3">Data Science Curriculum</h3>
               <p className="text-muted-foreground max-w-md mx-auto">
-                Predictive valuation models, ML-driven price mapping, and spatial intelligence structures tailored exclusively for real estate analytics.
+                Predictive valuation models, ML-driven price mapping, and spatial intelligence
+                structures tailored exclusively for real estate analytics.
               </p>
             </div>
           )}

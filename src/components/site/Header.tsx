@@ -14,7 +14,8 @@ const programs = [
     to: "/programs/information-technology",
     label: "MCA (PropTech)",
     desc: "PropTech infrastructure",
-  },  {
+  },
+  {
     to: "/programs/mba-real-estate",
     label: "MBA in Real Estate",
     desc: "Business strategy & property technology",

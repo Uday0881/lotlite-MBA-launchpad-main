@@ -54,11 +54,27 @@ export function AdmissionsProcess() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { round: "Round 1", deadline: "July 15, 2026", fee: "₹4,50,000", seats: "30 Seats" },
-              { round: "Round 2", deadline: "August 22, 2026", fee: "₹4,75,000", seats: "45 Seats", highlight: true },
-              { round: "Round 3", deadline: "September 30, 2026", fee: "₹5,00,000", seats: "25 Seats" },
+              {
+                round: "Round 2",
+                deadline: "August 22, 2026",
+                fee: "₹4,75,000",
+                seats: "45 Seats",
+                highlight: true,
+              },
+              {
+                round: "Round 3",
+                deadline: "September 30, 2026",
+                fee: "₹5,00,000",
+                seats: "25 Seats",
+              },
             ].map((tier, i) => (
-              <div key={i} className={`rounded-2xl border ${tier.highlight ? 'border-[var(--gold)]/40 bg-card/60 shadow-[0_0_30px_rgba(255,215,0,0.05)] scale-105' : 'border-hairline bg-card/40'} p-8 flex flex-col`}>
-                <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-2">{tier.round}</div>
+              <div
+                key={i}
+                className={`rounded-2xl border ${tier.highlight ? "border-[var(--gold)]/40 bg-card/60 shadow-[0_0_30px_rgba(255,215,0,0.05)] scale-105" : "border-hairline bg-card/40"} p-8 flex flex-col`}
+              >
+                <div className="text-xs uppercase tracking-widest text-[var(--gold)] mb-2">
+                  {tier.round}
+                </div>
                 <div className="text-3xl font-bold mb-1">{tier.fee}</div>
                 <div className="text-sm text-muted-foreground mb-6">Deadline: {tier.deadline}</div>
                 <div className="mt-auto inline-flex self-start items-center gap-2 rounded-md bg-white/5 px-3 py-1.5 text-xs font-medium">
@@ -72,9 +88,15 @@ export function AdmissionsProcess() {
             <div>
               <h4 className="font-bold mb-3 text-[var(--gold)]">All Admission Tiers Include:</h4>
               <ul className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-foreground/90">
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Mobility fleet access</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Industry software tools</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> VIP networking passes</li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Mobility fleet access
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> Industry software tools
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[var(--gold)]" /> VIP networking passes
+                </li>
               </ul>
             </div>
           </div>

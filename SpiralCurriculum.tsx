@@ -49,11 +49,18 @@ export function SpiralCurriculum({ semesters }: SpiralCurriculumProps) {
                   <div className="grid lg:grid-cols-2 gap-6">
                     {/* Left Track (SPPU) */}
                     <div className="space-y-3">
-                      <h4 className="font-semibold text-sm text-foreground/90">{semester.leftTrack!.title}</h4>
-                      <p className="text-xs text-muted-foreground mb-3">{semester.leftTrack!.description}</p>
+                      <h4 className="font-semibold text-sm text-foreground/90">
+                        {semester.leftTrack!.title}
+                      </h4>
+                      <p className="text-xs text-muted-foreground mb-3">
+                        {semester.leftTrack!.description}
+                      </p>
                       <ul className="space-y-2">
                         {semester.leftTrack!.courses.map((course, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <li
+                            key={idx}
+                            className="flex items-start gap-2 text-xs text-muted-foreground"
+                          >
                             <Check className="h-3.5 w-3.5 text-[var(--gold)]/70 mt-0.5 shrink-0" />
                             <span>{course}</span>
                           </li>
@@ -62,13 +69,21 @@ export function SpiralCurriculum({ semesters }: SpiralCurriculumProps) {
                     </div>
                     {/* Right Track (Lotlite) */}
                     <div className="space-y-3">
-                      <h4 className="font-semibold text-sm text-foreground/90">{semester.rightTrack!.title}</h4>
-                      <p className="text-xs text-muted-foreground mb-3">{semester.rightTrack!.description}</p>
+                      <h4 className="font-semibold text-sm text-foreground/90">
+                        {semester.rightTrack!.title}
+                      </h4>
+                      <p className="text-xs text-muted-foreground mb-3">
+                        {semester.rightTrack!.description}
+                      </p>
                       <div className="space-y-4">
                         {semester.rightTrack!.courses.map((course, idx) => (
                           <div key={idx}>
-                            <p className="font-semibold text-xs text-foreground/80">{course.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{course.description}</p>
+                            <p className="font-semibold text-xs text-foreground/80">
+                              {course.title}
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              {course.description}
+                            </p>
                           </div>
                         ))}
                       </div>
@@ -76,19 +91,25 @@ export function SpiralCurriculum({ semesters }: SpiralCurriculumProps) {
                   </div>
                 ) : (
                   <ul className="space-y-2">
-                    {Array.isArray(semester.courses) && semester.courses.map((course, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Check className="h-4 w-4 text-[var(--gold)] mt-0.5 shrink-0" />
-                        <span>{typeof course === 'string' ? course : course.title}</span>
-                      </li>
-                    ))}
+                    {Array.isArray(semester.courses) &&
+                      semester.courses.map((course, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-sm text-muted-foreground"
+                        >
+                          <Check className="h-4 w-4 text-[var(--gold)] mt-0.5 shrink-0" />
+                          <span>{typeof course === "string" ? course : course.title}</span>
+                        </li>
+                      ))}
                   </ul>
                 )}
               </div>
 
               {/* The connector and dot for desktop */}
               <div className="hidden md:block w-10 h-10 relative">
-                <div className={`absolute top-1/2 h-px w-full bg-gradient-to-r ${isEven ? 'from-transparent to-[var(--gold)]/30' : 'from-[var(--gold)]/30 to-transparent'}`} />
+                <div
+                  className={`absolute top-1/2 h-px w-full bg-gradient-to-r ${isEven ? "from-transparent to-[var(--gold)]/30" : "from-[var(--gold)]/30 to-transparent"}`}
+                />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-gradient-to-br from-[var(--gold)] to-[var(--gold-bright)] shadow-gold" />
               </div>
 
